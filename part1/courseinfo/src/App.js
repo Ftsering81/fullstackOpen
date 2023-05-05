@@ -1,8 +1,8 @@
-
+// Header component renders the name of the course
 const Header = (props) => {
   return(<h1>{props.course}</h1>)
 }
-
+// Content component renders the parts and their number of exercises
 const Content = (props) => {
   return(
     <div>
@@ -13,6 +13,7 @@ const Content = (props) => {
   )
 }
 
+// Total component renders the total number of exercises.
 const Total = (props) => {
   return(
   <p>Number of exercises {props.exercises[0] + props.exercises[1] + props.exercises[2]}</p>
